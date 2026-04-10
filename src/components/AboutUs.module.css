@@ -1,0 +1,166 @@
+.section {
+  padding: 5rem 0;
+  background: var(--gray-light);
+}
+
+.topGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+
+.leftContent {
+  color: var(--dark-accent);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.desc {
+  font-size: 1.1rem;
+  color: var(--gray-text);
+  line-height: 1.8;
+}
+
+.skillsPanel {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.skillItem {
+  margin-bottom: 1.5rem;
+}
+
+.skillItem:last-child {
+  margin-bottom: 0;
+}
+
+.skillHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.skillLabel {
+  font-weight: 600;
+  color: var(--dark-accent);
+}
+
+.skillPct {
+  font-weight: 700;
+  color: var(--main-brand);
+}
+
+.skillTrack {
+  height: 8px;
+  background: var(--gray-mid);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skillBar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--main-brand), var(--light-accent));
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.midGrid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+
+.statCard {
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+  color: var(--white);
+  background: repeating-conic-gradient(var(--dark-accent) 0% 25%, var(--dark-shades) 0% 50%) 50% / 40px 40px;
+}
+
+.statNum {
+  display: block;
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.statLabel {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.imageBlock {
+  height: 300px;
+  background: linear-gradient(135deg, var(--light-accent) 0%, var(--main-brand) 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.feature {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.featureTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--dark-accent);
+  margin-bottom: 0.75rem;
+}
+
+.featureDesc {
+  font-size: 0.95rem;
+  color: var(--gray-text);
+  line-height: 1.6;
+}
+
+@media (max-width: 968px) {
+  .topGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .midGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .statCard {
+    order: -1;
+  }
+
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
